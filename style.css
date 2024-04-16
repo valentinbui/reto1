@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body{
+    background-color: black;
+}*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EDFAFF;
+    padding: 1.5%;
+}
+
+.boton1{
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border: none;
+    font-size: 12px;
+    border-radius: 100px;
+}
+
+#banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-image: url(img/desktop.svg);
+    background-size: cover;
+    background-color: #EDFAFF;
+}
+
+#banner div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5em;
+    font-size: 22px;
+}
+
+#banner img{
+    width: 100%;
+}
+
+#banner div h1{
+    margin-bottom: 1em;
+}
+
+#banner div p{
+    margin-bottom: 1.5em;
+}
+
+#banner div button{
+    background-color: #FF9BDB;
+    color: white;
+    padding: 1em;
+    border: none;
+    font-size: 12px;
+    border-radius: 100px;
+}
+
+#section1{
+    align-items: center;
+    padding: 2.5em;
+    font-size: 22px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+#section1 img{
+    width: 100%;
+}
+
+#section1 h2{
+    margin-bottom: 0.5em;
+}
+
+#section2{
+    align-items: center;
+    justify-items: end;
+    padding: 2.5em;
+    font-size: 22px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+#section2 img{
+    width: 100%;
+}
+
+#section2 h2{
+    margin-bottom: 0.5em;
+}
+
+#section3{
+    align-items: center;
+    padding: 2.5em;
+    font-size: 22px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+#section3 img{
+    width: 100%;
+}
+
+#section3 h2{
+    margin-bottom: 0.5em;
+}
+
+#footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    height: 150px; 
+    background-color: white;
+    width: 30%;
+    margin: auto;
+}
+
+#footer div h2{
+    margin-bottom: 0.5em;
+}
+
+#footer div button{
+    background-color: #FF9BDB;
+    color: white;
+    padding: 1em;
+    border: none;
+    font-size: 12px;
+    border-radius: 100px;
+}
+
+#piepagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #00252E;
+    color: white;
+    align-items: center;
+}
+
+#footer ul img{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.uno{
+    grid-column: 1;
+    grid-row: 2/4;
+    line-height: 1.5;
+}
+
+.dos{
+    grid-column: 2;
+    grid-row: 2/3;
+    list-style: none
+}
+
+.tres{
+    grid-column: 3;
+    grid-row: 2/3;
+    list-style: none;
+}
+
+.cuatro{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px){
+    body {
+        background-color: white;
+    }
+
+    #banner div {
+        align-items: center;
+        padding: 1em;
+    }
+
+    #banner div h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    #banner figure {
+        width: 100%;
+        padding: 2.5em;
+    }
+
+    #banner div p {
+        text-align: center;
+    }
+
+    #banner {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #section1 {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    
+    #section1 div{
+        grid-row: 2;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #section1 img {
+        padding: 0.5em;
+    }
+
+    #section2 {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    
+    #section2 div{
+        grid-row: 2;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #section2 img {
+        padding: 0.5em;
+    }
+
+    #section3 {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+    
+    #section3 div{
+        grid-row: 2;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #section3 img {
+        padding: 0.5em;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    #piepagina{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+    }
+
+    .dos{
+        line-height: 1.5;
+    }
+
+    .tres{
+        line-height: 1.5;
+    }
+
+    .cuatro{
+        line-height: 1.5;
+    }
+}
